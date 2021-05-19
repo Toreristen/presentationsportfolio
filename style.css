@@ -41,7 +41,6 @@ nav.flexbox{
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
 
  ul {
@@ -55,7 +54,6 @@ nav.flexbox{
 
 ul li{
   margin-right: 100px;
-
   &: last-child {
   margin-right: 0px;
   }
@@ -103,6 +101,7 @@ header {
   padding-top: 350px;
   padding-left: 100px;
 }
+
 h1.name {
   font-size: 80px;
   font-family: Objektiv-mk1, sans-serif ;
@@ -116,7 +115,6 @@ h2 {
   padding: 0px;
   margin-top: 10px;
   font-size: 50px;
-
 }
 
 p {
@@ -139,9 +137,42 @@ p {
 
 main{
   grid-area: main;
+  margin: 0px;
+  padding: 0px;
+  padding-top: 10px;
+}
+
+.about-flex-container {
+  display: flex;
+  justify-content: space-between;
   border: 1px solid red;
-  margin: 8px;
-  padding: 8px;
+  background-color: #1c2833;
+  color: #f2f1ef;
+  height:701px;
+}
+
+.about-item {
+  border: 1px solid red;
+  margin-left: 140px;
+  margin-top: 110px;
+}
+
+.about-item h1 {
+  font-size: 80px;
+  padding-top: 0px;
+}
+
+.portrait-item {
+  margin-right: 0px;
+  padding-right: 0px;
+
+}
+
+.imgportrait {
+  height: 700px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  padding-top: 100px;
 }
 
 footer{
