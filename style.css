@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
-
 html {
   font size: 100%;
   box-sizing: border-box;
@@ -10,7 +8,8 @@ body {
   padding: 0 px;
   min-height: 100vh;
   background-color: #fefefe;
-  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-family: 'objektiv-mk1', sans-serif;
+  font-weight: 500;
 }
 
 *, *::before, *::after {
@@ -19,16 +18,18 @@ body {
 
 nav {
   background-color: #1c2833;
+  height: 130px;
   padding: 10px;
   @media (min-width: 600px) {
     padding: 20px;
-    height: 130;
   }
 }
 
 nav.flexbox{
   display: flex;
   justify-content: space-between;
+  align-items: center;
+
 }
 
  ul {
@@ -36,20 +37,36 @@ nav.flexbox{
   justify-content: flex-end;
   align-items: center;
   list-style-type: none;
-  color: #f2f1ef;
   padding: 0px;
   margin: 0px;
 }
 
-ul li {
-  color: #fefefe;
-  margin-right: 20px;
-&: last-child {
+ul li{
+  margin-right: 100px;
+
+  &: last-child {
   margin-right: 0px;
   }
 }
 
 a {
   text-decoration: none;
+  color: #f2f1ef;
+  font-size: 20px;
+}
 
+li a:hover {
+  color: #ed5565;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 237px;
+  height: 34px;
+}
+
+.logo img {
+  width: 100%;
 }
