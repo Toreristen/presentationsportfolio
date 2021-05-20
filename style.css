@@ -181,7 +181,7 @@ main{
 }
 
 /*Få projects til at virke*/
-.projects {
+div .projects {
   background-color: #3e3e3e;
 }
 div .projects h1{
@@ -192,28 +192,28 @@ padding-top: 60px;
   margin-bottom: 40PX;
 }
 
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 10px;
-  justify-content: center;
+.flex-container1 {
+display:flex;
+justify-content: center;
+}
+.flex-container2 {
+display:flex;
+justify-content: center;
+}
+.flex-container3 {
+display:flex;
+justify-content: center;
 }
 
-.grid-box {
+.flex-item {
   background: url(Images/cats-stock.jpg);
   background-size: cover;
   height: 500px;
-  width: 600px;
+  flex-basis: 40%;
   margin: 20px;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
 }
 
-/*få copyright centreret*/
+/*få copyright centreret og footer helt ned i bunden*/
 
 footer{
   grid-area: footer;
@@ -226,12 +226,6 @@ footer{
 }
 
 .copyright {
-align-items: center;
-}
-
-.footerflex {
-display: flex;
-justify-content: flex-end;
-align-items: center;
-margin-left: 0px;
+text-align: center;
+padding: 40px 0px;
 }
