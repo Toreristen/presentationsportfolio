@@ -11,7 +11,7 @@
 
 html {
   font size: 100%;
-  box-sizing: border-box;
+
 }
 
 body {
@@ -23,13 +23,20 @@ body {
   font-weight: 500;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 *, *::before, *::after {
   box-sizing: inherit;
 }
 
 nav {
+  position: fixed;
+  width: 100%;
   grid-area: nav;
   background-color: #1c2833;
+  border-bottom: 5px solid #ed5565;
   height: 100px;
   padding: 10px;
   @media (min-width: 600px) {
@@ -145,14 +152,12 @@ main{
 .about-flex-container {
   display: flex;
   justify-content: space-between;
-  border: 1px solid red;
   background-color: #1c2833;
   color: #f2f1ef;
-  height:701px;
+  height:700px;
 }
 
 .about-item {
-  border: 1px solid red;
   margin-left: 140px;
   margin-top: 110px;
 }
@@ -167,7 +172,7 @@ main{
   padding-right: 0px;
 
 }
-
+/*få portræt til at virke*/
 .imgportrait {
   height: 700px;
   margin-bottom: 0px;
@@ -175,9 +180,58 @@ main{
   padding-top: 100px;
 }
 
+/*Få projects til at virke*/
+.projects {
+  background-color: #3e3e3e;
+}
+div .projects h1{
+  text-align: center;
+  color: #f2f1ef;
+padding-top: 60px;
+  margin-top: 60PX;
+  margin-bottom: 40PX;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  justify-content: center;
+}
+
+.grid-box {
+  background: url(Images/cats-stock.jpg);
+  background-size: cover;
+  height: 500px;
+  width: 600px;
+  margin: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+/*få copyright centreret*/
+
 footer{
   grid-area: footer;
-  border: 1px solid red;
-  margin: 8px;
-  padding: 8px;
+  background-color: #1c2833;
+  color: #fefefe;
+  border-top: 5px solid #fefefe;
+  height: 100px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.copyright {
+align-items: center;
+}
+
+.footerflex {
+display: flex;
+justify-content: flex-end;
+align-items: center;
+margin-left: 0px;
 }
