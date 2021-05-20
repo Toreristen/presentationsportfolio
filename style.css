@@ -140,18 +140,37 @@ p {
 
   padding-left: 50px;
 }
-
+/*
 .illustration {
   grid-area: illustration;
   padding-right: 20px;
   padding-top: 20px;
 }
-
+*/
 .imgillustration {
   position:relative;
   top: 150px;
   left: 50px;
   height:80%;
+}
+
+.sprite {
+  border: 1px solid red;
+
+  width:1000px;
+  height:1000px;
+  background: url('images/circle-animation-02-01.png') 0 0 no-repeat;
+  animation: play 1s steps(10) reverse;
+  position:relative;
+  top: 100px;
+  left: -100px;
+  height:100%;
+}
+
+@keyframes play {
+  0%{background-position: 0px;}
+  100%{background-position: -10000px;}
+  /* bredden * steps for at finde 100% */
 }
 
 /*...........Main content............*/
@@ -195,7 +214,7 @@ p.about-text {
 h3 {
   font-size: 50px;
   padding-left: 100px;
-  padding-top: 50px;
+  padding-top: 200px;
 }
 ul.competences {
   justify-content: space-evenly;
@@ -320,7 +339,7 @@ ul.contact-list li {
 
 .imgcontactillustration {
   position:relative;
-  top: 80px;
+  top: 60px;
   left: -80px;
   height:80%;
 }
