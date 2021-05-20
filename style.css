@@ -11,7 +11,9 @@
 
 html {
   font size: 100%;
-  overflow-x: hidden;
+  overflow: hidden;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -93,6 +95,7 @@ li a:hover {
 
 /*..........Introduktion..............*/
 header {
+  height: 100vh;
   grid-area: header;
   background-color: #fefefe;
 }
@@ -127,12 +130,14 @@ h2 {
   padding: 0px;
   margin-top: 10px;
   font-size: 50px;
-  padding-left: 100px;
+  padding-top: 10px;
+  padding-left: 0px;
 }
 
 p {
   margin: 0px;
   font-size: 40px;
+
   padding-left: 50px;
 }
 
@@ -150,12 +155,18 @@ p {
 }
 
 /*...........Main content............*/
+/*...........ABOUT ME................*/
 
 main{
   grid-area: main;
   margin: 0px;
   padding: 0px;
   padding-top: 10px;
+}
+
+section#about {
+  height: 100vh;
+  padding-top: 100px;
 }
 
 .about-flex-container {
@@ -198,7 +209,7 @@ få portræt til at virke-->position:relative; kan left og top til at flytte det
   height: 700px;
   position: relative;
   left: 15px;
-  top: 60px;
+  top: 252px;
 
 }
 
@@ -207,6 +218,10 @@ få portræt til at virke-->position:relative; kan left og top til at flytte det
 Få projects til at virke-->brugte flexbox i stedet for grid. lavede tre separate containers
 */
 
+section#projects {
+  padding-top: 180px;
+}
+
 div .projects {
   background-color: #3e3e3e;
 }
@@ -214,9 +229,9 @@ div .projects {
 div .projects h1{
   text-align: center;
   color: #f2f1ef;
-  padding-top: 60px;
-  margin-top: 60PX;
-  margin-bottom: 40PX;
+  padding-top: 0px;
+  margin-top: 0px;
+  margin-bottom: 40px;
   font-size: 80px;
   font-weight: 700;
 }
@@ -244,6 +259,8 @@ div .projects h1{
   height: 500px;
   flex-basis: 45%;
   margin: 25px 20px;
+  text-align: center;
+
 }
 
 .flex-item3 {
@@ -253,37 +270,58 @@ div .projects h1{
   flex-basis: 45%;
   margin: 25px 20px;
   margin-bottom: 150px;
+  text-align: center;
 }
 
 /*............Contact...........*/
+
+section#contact {
+  height: 100vh;
+  padding-top: 100px;
+}
 
 .contact {
   display: flex;
   justify-content: space-between;
   background-color: #fefefe;
-  border-radius: 1px solid red;
   height: 700px;
 
 }
 
 .info {
-  border-radius: 1px solid red;
 }
 
-h2.contact-header {
-  border-radius: 1px solid red;
+h2.contact-heading {
+  font-size: 80px;
+  font-weight: 700;
+  padding-left: 100px;
+  margin-top: 100px;
+}
 
+p.contact-text {
+  padding-left: 100px;
+}
+
+ul.contact-list {
+  padding-left: 100px;
+  padding-top: 80px;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 32px;
+}
+
+ul.contact-list li {
+  margin: 10px 0px;
 }
 
 .contact-illustration {
-  border-radius: 1px solid red;
 
 }
 
 .imgcontactillustration {
   position:relative;
-  top: 150px;
-  left: 50px;
+  top: 80px;
+  left: -80px;
   height:80%;
 }
 

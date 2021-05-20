@@ -13,16 +13,18 @@
     <div class="wrapper">
       <nav class="flexbox">
         <div class="logo">
-          <img src="images/logo1.png" alt="Logo">
+          <a href="home">
+            <img src="images/logo1.png" alt="Logo">
+          </a>
         </div>
         <ul>
-          <li><a href="#">PROJECTS</a></li>
-          <li><a href="#">ABOUT ME</a></li>
-          <li><a href="#">CONTACT</a></li>
+          <li><a href="#about">ABOUT ME</a></li>
+          <li><a href="#projects">PROJECTS</a></li>
+          <li><a href="#contact">CONTACT</a></li>
         </ul>
       </nav>
 
-      <header class="headerwrap">
+      <header id="home" class="headerwrap">
           <div class="intro">
             <p>Hello I am</p>
             <h1 class="name">TORE ESKILDSEN</h1>
@@ -35,10 +37,10 @@
       </header>
 
       <main>
-        <div class="about-flex-container">
+        <section id="about" class="about-flex-container">
           <div class="about-item">
             <h2 class="about-me">ABOUT ME</h2>
-            <p class="about-text">My name is Tore Eskildsen and I  am 22 years old and I <br>come from Aalborg but now I live in Fredericia. I am a <br> multimediadesigner with a passion for webdesign. <br>My dream is to make beautiful and user friendly webpages.</p>
+            <p class="about-text">My name is Tore Eskildsen and I  am 22 years old and I <br> from Aalborg but now I live in Fredericia. I am a <br> multimediadesigner with a passion for webdesign. <br>My dream is to make beautiful and user friendly webpages.</p>
             <h3>I AM KNOWLEDGEABLE IN:</h3>
               <ul class="competences">
                 <li>WEB UI</li>
@@ -51,35 +53,50 @@
 
           <img class="imgportrait" src="images/portrait.png" alt="Portrait">
           </div>
-        </div>
+        </section>
 
-        <div class="projects">
+        <section id="projects" class="projects">
           <!--få gap mellem projects og about samlet-->
           <h1>PROJECTS</h1>
           <div class="flex-container1">
-            <div class="flex-item">Item1</div>
-            <div class="flex-item">Item2</div>
+            <div class="flex-item">
+              <h2>Example</h2>
+            </div>
+            <div class="flex-item">
+              <h2>Example</h2>
+            </div>
           </div>
-
           <div class="flex-container2">
-            <div class="flex-item">Item3</div>
-            <div class="flex-item">Item4</div>
+            <div class="flex-item">
+              <h2>Example1</h2>
+            </div>
+            <div class="flex-item">
+              <h2>Example</h2>
+            </div>
           </div>
           <div class="flex-container3">
-            <div class="flex-item3">Item5</div>
-            <div class="flex-item3">Item6</div>
+            <div class="flex-item3">
+              <h2>Example</h2>
+            </div>
+            <div class="flex-item3">
+              <h2>Example</h2>
+            </div>
           </div>
-        </div>
+        </section>
 
-        <div class="contact">
+        <section id="contact" class="contact">
           <div class="info">
-            item 1
-            <h2 class="contact-header">CONTACT</h2>
-            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora quis vel deleniti quae fugiat a animi perferendis voluptates nostrum aspernatur laborum incidunt quo placeat, saepe ut id tenetur culpa magnam minus possimus aliquam expedita! Aliquam quos possimus excepturi sequi eius!</p>
+            <h2 class="contact-heading">CONTACT</h2>
+            <p class="contact-text"> Thank you for taking your time to take a look at my portfolio. <br>If you are interested in my skills feel free to contact me.</p>
+            <ul class="contact-list">
+              <li>Mail</li>
+              <li>Phone</li>
+              <li>Linked in</li>
+            </ul>
           </div>
           <div class="contact-illustration">
             <img class="imgcontactillustration" src="images/circle-pattern.png" alt="Circle Pattern">
-          </div>
+          </section>
         </div>
 
       </main>
