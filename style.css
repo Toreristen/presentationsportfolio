@@ -30,7 +30,7 @@ body {
 }
 
 *, *::before, *::after {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 /*.............navigationbar..............*/
@@ -95,10 +95,10 @@ li a:hover {
 
 /*..........Introduktion..............*/
 header {
-  height: 100vh;
+  height: 120vh;
   grid-area: header;
   background-color: #fefefe;
-  padding-bottom: 150px;
+  padding-bottom: 0px;
 }
 
 .headerwrap {
@@ -138,7 +138,6 @@ h2 {
 p {
   margin: 0px;
   font-size: 40px;
-
   padding-left: 50px;
 }
 
@@ -149,11 +148,12 @@ p {
 
 .sprite {
   padding-bottom: 150px;
+  margin-bottom: 200px:
   overflow: visible;
   width: 100%;
   height: 100%;
   background: url('images/circle-animation-02-01.png') 0 0 no-repeat;
-  animation: play 1s steps(10) reverse;
+  animation: play 0.4s steps(10) reverse;
 }
 
 @keyframes play {
@@ -174,7 +174,7 @@ main{
 
 section#about {
   height: 100vh;
-  padding-top: 100px;
+  padding-top: 20px;
 }
 
 .about-flex-container {
@@ -182,10 +182,11 @@ section#about {
   justify-content: space-between;
   background-color: #1c2833;
   color: #f2f1ef;
-  height:700px;
+  height:100%;
 }
 
 .about-item {
+  padding: 0px;
 }
 
 h2.about-me {
@@ -203,22 +204,21 @@ p.about-text {
 h3 {
   font-size: 50px;
   padding-left: 100px;
-  padding-top: 200px;
+  padding-top: 100px;
 }
 ul.competences {
   justify-content: space-evenly;
-  padding-left: 100px;
+  padding-left: 0px;
   font-size: 40px;
 }
+
 /*
 få portræt til at virke-->position:relative; kan left og top til at flytte det.
 */
 .imgportrait {
-  height: 700px;
+  height: 100%;
   position: relative;
-  left: 15px;
-  top: 252px;
-
+  left: 20px;
 }
 
 /*...........Projects................*/
@@ -227,7 +227,7 @@ Få projects til at virke-->brugte flexbox i stedet for grid. lavede tre separat
 */
 
 section#projects {
-  padding-top: 180px;
+  padding-top: 120px;
 }
 
 div .projects {
@@ -254,11 +254,13 @@ div .projects h1{
 .flex-container2 {
   display:flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .flex-container3 {
   display:flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .flex-item {
@@ -285,7 +287,7 @@ div .projects h1{
 
 section#contact {
   height: 100vh;
-  padding-top: 100px;
+  padding-top: 80px;
 }
 
 .contact {
@@ -293,7 +295,6 @@ section#contact {
   justify-content: space-between;
   background-color: #fefefe;
   height: 700px;
-
 }
 
 .info {
@@ -357,6 +358,61 @@ footer{
 /*............Media queries...........*/
 
 
-@media screen and () {
+@media screen and (min-width: 600px) {
+  section#projects {
+    padding-top: 120px;
+  }
 
+  div .projects {
+    background-color: #3e3e3e;
+  }
+
+  div .projects h1{
+    text-align: center;
+    color: #f2f1ef;
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 40px;
+    font-size: 80px;
+    font-weight: 700;
+  }
+
+  .flex-container1 {
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-shrink: 1;
+  }
+
+  .flex-container2 {
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .flex-container3 {
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .flex-item {
+    background: url(Images/cats-stock.jpg);
+    background-size: cover;
+    height: 500px;
+    flex-basis: 45%;
+    margin: 25px 20px;
+    text-align: center;
+
+  }
+
+  .flex-item3 {
+    background: url(Images/cats-stock.jpg);
+    background-size: cover;
+    height: 500px;
+    flex-basis: 45%;
+    margin: 25px 20px;
+    margin-bottom: 150px;
+    text-align: center;
+  }
 }
