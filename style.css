@@ -240,8 +240,44 @@ section {
   height: 500px;
   flex-basis: 45%;
   margin: 25px 20px;
-  text-align: center;
 }
+
+.image_overlay {
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(5px);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+.image_overlay > * {
+  transform: translateY(20px);
+  transition: transform 0.25s;
+}
+
+.image_overlay:hover {
+  opacity: 1;
+}
+
+.image_overlay:hover > * {
+  transform: translateY(0);
+}
+
+.image_title {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.image_description {
+  font-size: 2rem;
+  margin-top: 1%;
+}
+
 
 .flex-item2 {
   background: url(Images/cats-stock.jpg);
