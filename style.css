@@ -360,13 +360,26 @@ p.contact-text {
   font-size: 2rem;
 }
 
-.contact-list {
+ul.contact-list {
   padding-top: 40px;
   flex-direction: column;
   align-items: flex-start;
   font-size: 2.5rem;
-  padding-left: 8vw;
 }
+ul.contact-list>li {
+  padding-top: 40px;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 2.5rem;
+  }
+
+  ul.contact-list>li>a {
+    color: #1c2833;
+    }
+
+  ul.contact-list>li>a:hover {
+    color: #ed5565;
+    }
 
 .imgcontactillustration {
   max-height: 700px;
