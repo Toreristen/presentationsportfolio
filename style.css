@@ -425,6 +425,7 @@ h1.example_h1 {
 
 p.example_paragraph {
   font-size: 1.5rem;
+  line-height: 1.5;
   padding: 2vw;
 }
 
@@ -434,11 +435,40 @@ div.example_img {
   min-width: 60%;
   height: 100%;
 }
+div.example_img_phone {
+  padding: 0 2vw 2vw 0;
+  max-width: 20%;
+  min-width: 20%;
+  height: 100%;
+}
+div.example_img_bromancer {
+  padding: 0 2vw 2vw 0;
+  border: 1px solid #1c2833;
+  max-width: 20%;
+  min-width: 20%;
+  height: 100%;
+}
+
 img.example_img_img {
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
+
+/*............animation example...........*/
+.sprite {
+  width:500px;
+  height:500px;
+  background: url('images/darth-vader-05-01.png') 0 0 no-repeat;
+  animation: play 1.5s steps(24) infinite;
+}
+
+@keyframes play {
+  0%{background-position: 0px;}
+  100%{background-position: -12000px;}
+  /* bredden * steps for at finde 100% */
+}
+
 
 /*............Media queries...........*/
 @media screen and (max-width: 800px) {
