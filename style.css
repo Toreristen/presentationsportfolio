@@ -155,6 +155,7 @@ h2.about-me {
   font-weight: 700;
   padding-left: 8vw;
   margin-top: 100px;
+  margin-bottom: 50px;
 }
 
 p.about-text {
@@ -352,6 +353,7 @@ h2.contact-heading {
   font-size: 6rem;
   font-weight: 700;
   margin-top: 100px;
+  margin-bottom: 50px;
 }
 
 p.contact-text {
@@ -391,6 +393,51 @@ footer{
 .copyright {
   text-align: center;
   padding: 40px 0px;
+}
+
+/*............Example_1...........*/
+
+section.example_1 {
+  background: #fefefe;
+  min-height: 100vh;
+}
+
+div.example_container {
+  padding-top: 90px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+div.example_text {
+  max-width: 40%;
+  min-width: 40%;
+}
+
+h1.example_h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  padding-left: 2vw;
+  padding-top: 2vw;
+  text-transform: capitalize;
+}
+
+p.example_paragraph {
+  font-size: 1.5rem;
+  padding: 2vw;
+}
+
+div.example_img {
+  padding: 0 2vw 2vw 0;
+  max-width: 60%;
+  min-width: 60%;
+  height: 100%;
+}
+img.example_img_img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 /*............Media queries...........*/
@@ -491,4 +538,27 @@ section.frontpage {
   .imgcontactillustration {
     display: none;
   }
+
+  /*.........example pages..........*/
+  div.example_text {
+    min-width: 100vw;
+  }
+
+  h1.example_h1 {
+    font-size: 4rem;
+    padding-left: 2vw;
+    padding-top: 20vw;
+  }
+
+  p.example_paragraph {
+    font-size: 1.5rem;
+    padding: 2vw;
+  }
+
+  div.example_img {
+    min-width: 100vw;
+    height: 100%;
+    padding: 0 2vw 2vw 2vw;
+  }
+
 }
