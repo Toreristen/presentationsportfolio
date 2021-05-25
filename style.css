@@ -456,10 +456,11 @@ img.example_img_img {
 }
 
 /*............animation example...........*/
-.sprite {
+.sprite_vader {
   width:500px;
   height:500px;
   background: url('images/darth-vader-05-01.png') 0 0 no-repeat;
+  background-position: left;
   animation: play 1.5s steps(24) infinite;
 }
 
@@ -575,13 +576,13 @@ section.frontpage {
   }
 
   h1.example_h1 {
-    font-size: 4rem;
+    font-size: 2.5rem;
     padding-left: 2vw;
     padding-top: 20vw;
   }
 
   p.example_paragraph {
-    font-size: 1.5rem;
+    font-size: 1rem;
     padding: 2vw;
   }
 
@@ -591,4 +592,8 @@ section.frontpage {
     padding: 0 2vw 2vw 2vw;
   }
 
+  .sprite_vader {
+    width:100%;
+    height:500px;
+  }
 }
