@@ -519,15 +519,18 @@ section.frontpage {
 
   h1.name {
     font-size: 20px;
+    padding-left: 15vw;
   }
 
   p.intro_paragraph {
     font-size: 16px;
+    padding-left: 25vw;
   }
 
   h2.intro_h2 {
     font-size: 18px;
     margin-bottom: 60px;
+    padding-left: 15vw;
   }
   .about-flex-container {
     flex-wrap: wrap;
@@ -536,17 +539,24 @@ section.frontpage {
   /*.........about me..........*/
   h2.about-me {
     font-size: 2.5rem;
+    text-align: center;
   }
 
   p.about-text {
     font-size: 1rem;
+    width: 100%;
+    padding-right: 5vw;
   }
 
   h3 {
     font-size: 1rem;
+    text-align: center;
   }
+
   ul.competences li{
     display: block;
+    font-size: 1rem;
+    text-align: center;
   }
 
   .imgportrait {
@@ -581,15 +591,21 @@ section.frontpage {
   /*.........Contact..........*/
   h2.contact-heading {
     font-size: 40px;
+    text-align: center;
+    padding-left: 14vw;
   }
 
   p.contact-text {
     font-size: 20px;
     word-wrap: break-word;
+    margin-left: 14vw;
+    width: 100%;
   }
 
   ul.contact-list {
     font-size: 20px;
+    margin-left: 14vw;
+    min-width: 100%;
   }
 
   .imgcontactillustration {
