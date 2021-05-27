@@ -95,7 +95,6 @@ section.frontpage {
 }
 
 .intro {
-  /*border: 1px solid deeppink;*/
   color: #1c2833;
   padding-top: 20rem;
   padding-left: 8vw;
@@ -181,7 +180,6 @@ få portræt til at virke-->position:relative; kan left og top til at flytte det
 .imgportrait {
   width: 100%;
   position: relative;
-  top: 26%;
   left: 5%;
 }
 
@@ -650,7 +648,6 @@ section.frontpage {
   .imgportrait {
     position: relative;
     left: 10%;
-    top: 11%;
     width: 100%;
   }
 }
