@@ -6,7 +6,7 @@ html {
 
 body {
   background-color: #1c2833;
-  font-family: 'objektiv-mk1', sans-serif;
+  font-family: 'graphie', sans-serif;
   font-size: 62.5%;
 }
 
@@ -19,6 +19,8 @@ body {
 }
 
 /*.............navigationbar..............*/
+
+
 
 nav {
   position: fixed;
@@ -35,7 +37,6 @@ nav {
   flex-direction: row;
   flex-wrap: wrap;
 }
-
 nav ul li{
   display: inline-block;
   margin: 0 30px;
@@ -74,8 +75,8 @@ nav ul li a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 237px;
-  height: 34px;
+  max-width: 237px;
+  max-height: 34px;
 }
 
 .logo img {
@@ -180,6 +181,7 @@ få portræt til at virke-->position:relative; kan left og top til at flytte det
 */
 .imgportrait {
   width: 100%;
+  min-height: 100%;
   position: relative;
   left: 5%;
 }
@@ -194,13 +196,13 @@ section#projects {
 }
 
 section {
-  background-color: #3e3e3e;
+  background-color: #fefefe;
   width: 100%;
 }
 
 .projects h1{
   text-align: center;
-  color: #f2f1ef;
+  color: #1c2833;
   margin-bottom: 40px;
   font-size: 6rem;
   font-weight: 700;
@@ -345,7 +347,7 @@ section {
 
 section#contact {
   min-height: 100vh;
-  padding-top: 80px;
+  padding-top: 40px;
 }
 
 section.contact {
@@ -370,6 +372,7 @@ h2.contact-heading {
 p.contact-text {
   font-size: 2rem;
   word-wrap: break-word;
+  /*margin-left: 30px;*/
 }
 
 ul.contact-list {
@@ -377,7 +380,8 @@ ul.contact-list {
   flex-direction: column;
   align-items: flex-start;
   font-size: 2.5rem;
-  padding-bottom: 5%;
+  padding-bottom: 40px;
+  /*margin-left: 30px;*/
 }
 ul.contact-list>li {
   padding-top: 40px;
@@ -393,6 +397,65 @@ ul.contact-list>li {
   ul.contact-list>li>a:hover {
     color: #ed5565;
     }
+
+form {
+  margin: 40px 0 0 0;
+}
+
+form label {
+  font-size: 2rem;
+  /*margin-left: 10px;*/
+}
+
+form input {
+  margin-top: 5px;
+  margin-bottom: 20px;
+/*  margin-left: 10px;*/
+  height: 30px;
+  width: 300px;
+}
+
+form textarea {
+  margin-top: 5px;
+/*  margin-left: 10px;*/
+  width: 600px;
+  min-width: 200px;
+  max-width: 600px;
+  min-height: 300px;
+  max-height: 500px;
+}
+
+textarea, input {
+  outline: none;
+  border: 2px solid #1c2833;
+}
+
+textarea:focus, input:focus {
+  box-shadow: 0 0 5px rgba(237, 85, 101, 0.6);
+}
+
+form button {
+  border: none;
+  background-color: #ed5565;
+  margin-top: 20px;
+/*  margin-left: 10px;*/
+  margin-bottom: 40px;
+  width: 150px;
+  border-radius: 5px;
+  font-size: 2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+form button:hover {
+  color: #fefefe;
+}
+
+.fas {
+  color: #1c2833;
+  font-size: 30px;
+}
 
 .imgcontactillustration {
   max-height: 100%;
@@ -511,30 +574,36 @@ img.example_img_img {
 
 /*............frontpage...........*/
 section.frontpage {
-  min-height: 60vh;
+  min-height: 100vh;
   }
 
   div.intro {
     padding-top: 15rem;
+    padding-bottom: 0;
   }
 
   .illustration {
-    display: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    width: 50%;
+    padding-top: 0;
   }
 
   h1.name {
-    font-size: 20px;
+    font-size: 2rem;
     padding-left: 15vw;
   }
 
   p.intro_paragraph {
-    font-size: 16px;
+    font-size: 1.1rem;
     padding-left: 25vw;
   }
 
   h2.intro_h2 {
-    font-size: 18px;
-    margin-bottom: 60px;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
     padding-left: 15vw;
   }
   .about-flex-container {
@@ -542,9 +611,15 @@ section.frontpage {
   }
 
   /*.........about me..........*/
+
+  section#about {
+    padding-top: 0px;
+  }
+
   h2.about-me {
     font-size: 2.5rem;
     text-align: center;
+    margin-top: 50px;
   }
 
   p.about-text {
@@ -565,13 +640,16 @@ section.frontpage {
   }
 
   .imgportrait {
-    position: relative;
-    left: 18%;
-    top: 0%;
     width: 80%;
+    top: 0%;
+    left: 19%;
   }
 
   /*.........Projects..........*/
+  section#projects.projects {
+    padding-top: 50px;
+  }
+
   .projects h1 {
     font-size: 40px;
   }
@@ -593,11 +671,30 @@ section.frontpage {
   .flex-item6 {
     height: 300px;
   }
+  .image_title {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  .image_description {
+    font-size: 1rem;
+    margin-top: 1%;
+  }
   /*.........Contact..........*/
+
+  section#contact.contact {
+    padding: 50px 0 0 0;
+  }
+
+  div.info {
+    padding-bottom: 0px;
+  }
+
   h2.contact-heading {
     font-size: 40px;
     text-align: center;
     padding-left: 14vw;
+    margin-top: 0px;
   }
 
   p.contact-text {
@@ -611,10 +708,55 @@ section.frontpage {
     font-size: 20px;
     margin-left: 14vw;
     min-width: 100%;
+    padding: 0px;
+  }
+
+  ul.contact-list li a {
+    color: #000;
+    font-size: 20px;
+  }
+
+  .fas {
+    color: #1c2833;
+    font-size: 15px;
   }
 
   .imgcontactillustration {
     display: none;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-bottom: 50px;
+  }
+
+  form {
+    margin-left: 30px;
+  }
+
+  form label {
+    font-size: 20px;
+    margin-left: 20px;
+  }
+
+  form input {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    height: 30px;
+    width: 200px;
+  }
+
+  form textarea {
+    margin-top: 5px;
+    margin-left: 20px;
+    width: 600px;
+    min-width: 100px;
+    max-width: 200px;
+    min-height: 200px;
+    max-height: 500px;
+  }
+  div.contact_btn {
+    margin-left: 30px;
   }
 
   /*.........example pages..........*/
@@ -652,6 +794,8 @@ section.frontpage {
     width: 100%;
   }
 }
+
+/*
 @media screen and (max-width:1300px) {
   .imgportrait {
     position: relative;
@@ -692,3 +836,4 @@ section.frontpage {
     width: 100%;
   }
 }
+*/

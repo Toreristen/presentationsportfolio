@@ -4,8 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <script src="https://kit.fontawesome.com/bd8605f5df.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.typekit.net/seh1dmc.css">
+    <link rel="stylesheet" href="https://use.typekit.net/pwb1pou.css">
   </head>
 
   <body>
@@ -124,10 +126,21 @@
             <h2 class="contact-heading">CONTACT</h2>
             <p class="contact-text"> Thank you for taking your time to take a look at my portfolio. <br> If you are interested in my skills feel free to contact me.</p>
             <ul class="contact-list" >
-              <li>Mail:<br> tore.eskildsen@outlook.dk</li>
-              <li>Phone:<br>+45 22611671</li>
-              <li><a href="https://dk.linkedin.com/in/tore-eskildsen-302b47193?trk=people-guest_people_search-card">Linked In</a></li>
+              <li><i class="fas fa-at"></i>  tore.eskildsen@outlook.dk</li>
+              <li><i class="fas fa-phone"></i> +45 22611671</li>
+              <li><a href="https://www.linkedin.com/in/tore-eskildsen-302b47193/"><i class="fab fa-linkedin"></i></a></li>
             </ul>
+            <form class="" action="index.html" method="post">
+              <label for="name">Name</label> <br>
+              <input type="text" name="name" id="name" placeholder="Write your name..." required> <br>
+              <label for="email">Email</label> <br>
+              <input type="email" name="email" id="email" placeholder="Write your email..." reguired> <br>
+              <label for="message">Message</label> <br>
+              <textarea name="message" id="message" placeholder="Write me a message..."></textarea> <br>
+              <div class="contact_btn">
+                <button type="submit" name="submit">Submit</button>
+              </div>
+            </form>
           </div>
           <img class="imgcontactillustration" src="images/circle-pattern.png" alt="Circle Pattern">
         </section>
